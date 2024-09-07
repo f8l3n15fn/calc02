@@ -12,73 +12,73 @@
 
     <div class="background">
         <div class="frame">
-            <p id="calcTitle">bora fi do bill</p>
+            <p id="calcTitle">calculos e etc</p>
             <p id="resultados">0</p> 
 
             <table class="keyboard">
                 <tr>
                     <td>
-                         <input onclick="clear()" class="btn" type="button" value="C"> 
+                         <input onclick="limpar()" class="btn" type="button" value="C"> 
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="<">
+                        <input onclick="voltar()" class="btn" type="button" value="<">
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="/">
+                        <input onclick="inserir('/')" class="btn" type="button" value="/">
                     </td>
 
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="X">
+                        <input onclick="inserir('*')" class="btn" type="button" value="X">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="7">
+                        <input onclick="inserir('7')" class="btn" type="button" value="7">
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="8">
+                        <input onclick="inserir('8')" class="btn" type="button" value="8">
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="9">
+                        <input onclick="inserir('9')" class="btn" type="button" value="9">
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="-">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input onclick="clear()" class="btn" type="button" value="4">
-                    </td>
-                    <td>
-                        <input onclick="clear()" class="btn" type="button" value="5">
-                    </td>
-                    <td>
-                        <input onclick="clear()" class="btn" type="button" value="6">
-                    </td>
-                    <td>
-                        <input onclick="clear()" class="btn" type="button" value="+">
+                        <input onclick="inserir('-')" class="btn" type="button" value="-">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="1">
+                        <input onclick="inserir('4')" class="btn" type="button" value="4">
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="2">
+                        <input onclick="inserir('5')" class="btn" type="button" value="5">
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value="3">
+                        <input onclick="inserir('6')" class="btn" type="button" value="6">
+                    </td>
+                    <td>
+                        <input onclick="inserir('+')" class="btn" type="button" value="+">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input onclick="inserir('1')" class="btn" type="button" value="1">
+                    </td>
+                    <td>
+                        <input onclick="inserir('2')" class="btn" type="button" value="2">
+                    </td>
+                    <td>
+                        <input onclick="inserir('3')" class="btn" type="button" value="3">
                     </td>
                     <td rowspan="2">
-                        <input style="height: 206px;" onclick="clear()" class="btn" type="button" value="=">
+                        <input style="height: 186px;" onclick="calcular()" class="btn" type="button" value="=">
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input style="width: 206px;" onclick="clear()" class="btn" type="button" value="0">
+                        <input style="width: 186px;" onclick="inserir('0')" class="btn" type="button" value="0">
                     </td>
                     <td>
-                        <input onclick="clear()" class="btn" type="button" value=",">
+                        <input onclick="inserir('.')" class="btn" type="button" value=",">
                     </td>
                 </tr>
             </table>
@@ -86,16 +86,6 @@
     </div>
 
 
-    <script>
-        let resultado = document.getElementById("resultados")
-
-        function clear(){
-            resultado.innerHTML = "0";
-        }
-
-        function adicionar(num){
-            resultado.innerHTML += num
-        }
-    </script>
+    <script src="calc.js"></script>
 </body>
 </html>
