@@ -9,11 +9,12 @@ body{
 }
 
 h1{
+    color: white;
     text-align: center;
     margin-top: 3vh;
 }
 .background{
-    margin-left: 50%;
+    margin-left: 10%;
     transform: translate(0%, 0);
     height: 80vh;
     width: 50vh;
