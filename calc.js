@@ -18,7 +18,7 @@ function adicionar(x){
 
 let mensagens = [
         "saudades",
-        "queria falar contigo dnv",
+        "queria te ver dnv",
         "saudades",
         "sempre penso em vc",
         "matemática = para bichas",  
@@ -67,11 +67,11 @@ function inserir(x){
             isOperator = true
             break;
         case "*":
-            alert("deixa eu multiplicar nossos momentos juntos!!")
+            alert("vamos multiplicar nossos momentos juntos!!")
             isOperator = true
             break;
         case "/":
-            alert("queria dividir minha vida com vc assim")
+            alert("vamos dividir nossas vidas")
             isOperator = true
             break;
         default:
