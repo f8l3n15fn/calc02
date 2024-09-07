@@ -4,6 +4,7 @@ let cd = 0;
 
 function limpar(){
     resultados.innerHTML = "0";
+    alert("deixa eu limpar meus erros e recomeçar do zero assim😭")
 }
 
 function adicionar(x){
@@ -15,15 +16,28 @@ function adicionar(x){
     
 }
 
+let mensagens = [
+        "saudades",
+        "queria falar contigo dnv",
+        "saudades",
+        "sempre penso em vc",
+        "matemática = para bichas",  
+    ] 
+let i = 0;
 function calcular(){
     cd += 1;
     resultados.innerHTML = eval(resultados.innerHTML)
 
-    if (cd == 3){
-        resultados.innerHTML = "vai se foder henryk";
+    if (cd == 2){
+        var guardar = resultados.innerHTML
+        resultados.innerHTML = mensagens[i];
+        i++
+        if (i == 4){
+            i = 0;
+        }
         cd = 0;
         setTimeout(function(){
-            resultados.innerHTML = "0";
+            resultados.innerHTML = guardar;
         }, 1500)
     }
     
@@ -45,18 +59,19 @@ function inserir(x){
     
     switch(x){
         case "+":
+            alert("oi posso somar na sua vida")
             isOperator = true
             break;
         case "-":
-            console.log("no");
+            alert("vamos subtrair seu namorado que tal")
             isOperator = true
             break;
         case "*":
-            console.log("no");
+            alert("deixa eu multiplicar nossos momentos juntos!!")
             isOperator = true
             break;
         case "/":
-            console.log("no");
+            alert("queria dividir minha vida com vc assim")
             isOperator = true
             break;
         default:
@@ -81,7 +96,6 @@ function inserir(x){
             lastIsOperator = false;
             break;
     }        
-    
     if(isOperator){
         if(!lastIsOperator){
             adicionar(x)
@@ -89,6 +103,5 @@ function inserir(x){
     }else{
         adicionar(x)
     }
-
 }
 
