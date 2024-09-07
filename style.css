@@ -40,7 +40,6 @@ h1{
 }
 
 .keyboard{
-    margin-top: 3vh;
     margin-left: 50%;
     transform: translate(-50%,0%);
     display: inline-block;
