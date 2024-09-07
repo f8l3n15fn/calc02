@@ -29,7 +29,7 @@ h1{
     background-color: rgb(255, 237, 205);
 }
 
-#henryk{
+.henryk{
     display:none;
     margin-top: 5vh;
     text-align: center;
