@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Teste</h1>
-    <p>que que deu errado meu deus do céuuu</p>
-    <p>agora vai né pelo amor de deus</p>
+    <h1>Clique no botão!</h1>
+    <input onclick="clicou()" id="btn" type="button" value="clique em mim">
+    <p id="henryk">Vai se foder henryk</p>
+    <script>
+        let henryk = document.getElementById("henryk")
+
+        function clicou(){
+            henryk.style.display = "block";
+        }
+        
+    </script>
 </body>
 </html>
