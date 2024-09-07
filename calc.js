@@ -105,4 +105,3 @@ function inserir(x){
     }
 }
 
-let test;
