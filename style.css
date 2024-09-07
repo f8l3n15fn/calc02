@@ -49,9 +49,9 @@ h1{
 .btn{
     color: white;
     background-color: rgb(105, 104, 104);
-    width: 7vh;
-    height: 7vh;
-    font-size: 150%;
+    width: 4vh;
+    height: 4vh;
+    font-size: 100%;
     margin: 3px;
     border: none;
 }
